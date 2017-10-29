@@ -1,0 +1,14 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">{{title}}</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+		    <view wx:for="{{items}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="/pages/news/newsitem?nid={{item.nid}}" >
+                <view class="weui-cell__bd">{{item.title}}</view>
+            </navigator>
+			</view>
+        </view>
+    </view>
+</view>

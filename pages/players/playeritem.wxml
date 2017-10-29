@@ -1,0 +1,35 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">{{node.title}}</view>
+
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                    <view class="weui-article__p">
+					  <image class="weui-article__img" src="{{node.img_url}}" mode="aspectFit" style="height: 180px" />  
+                    </view>
+					<view class="weui-article__p">
+					  等级分： {{node.elo}}
+                    </view>
+					<view class="weui-article__p">
+					  称号： {{node.title_name}}
+                    </view>					
+            </view>		
+		  <import src="../../wxParse/wxParse.wxml"/>
+
+          <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+<!--
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+
+                    <view class="weui-article__p">
+                      {{node.body}}
+                    </view>
+
+                </view>
+
+            </view> -->
+        </view>
+    </view>
+</view>

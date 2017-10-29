@@ -1,0 +1,93 @@
+<!--index.wxml-->
+<view class="page">
+<view class="page__bd">
+<!--
+<view class="search">
+  <view class="search_title">请输入与查找棋谱相关的关键字：</view>
+  <input placeholder="王天一" type="text"/>
+  <button>搜索</button>
+</view>-->
+   <view class="weui-panel">
+    <view class="weui-panel__bd"> 
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <!--<icon class="weui-icon-search_in-box" type="search" size="14"></icon>-->
+                    <input type="text" class="weui-search-bar__input" bindinput="inputTyping" bindconfirm="search" placeholder="棋谱搜索,比如输入：王天一" value="{{inputVal}}" />
+
+                </view>
+
+
+            </view>
+			<button type="default" size="mini" plain="true" bindtap="search" class="qipu-search-button" hover-class="qipu-button-hover">
+             搜索	
+			</button>
+
+        </view>
+	</view>	
+	</view>
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    
+                    <view class="weui-grid__label">Grid</view>
+                </navigator>
+            </block>
+			<block>
+			  <navigator url="/pages/qipus/qipus" class="weui-grid" hover-class="weui-grid_active">
+			  <image class="weui-grid__icon" src="../../images/icon_nav_special.png" />
+			  <view class="weui-grid__label">最新棋谱</view>
+			  
+			  </navigator>
+			</block>
+			<block>
+			  <navigator url="/pages/opening/opening" class="weui-grid" hover-class="weui-grid_active">
+			  <image class="weui-grid__icon" src="../../images/icon_nav_special.png" />
+			  <view class="weui-grid__label">开局导航</view>
+			  
+			  </navigator>
+			</block>
+			<block>
+			  <navigator url="/pages/players/players" class="weui-grid" hover-class="weui-grid_active">
+			  <image class="weui-grid__icon" src="../../images/icon_nav_special.png" />
+			  <view class="weui-grid__label">棋手风采</view>
+			  
+			  </navigator>
+			</block>	
+
+			<block>
+			  <navigator url="/pages/news/news?type=1" class="weui-grid" hover-class="weui-grid_active">
+			  
+			  <image class="weui-grid__icon" src="../../images/icon_nav_special.png" />
+			  <view class="weui-grid__label">象棋动态</view>
+			  </navigator>
+			</block>
+			<block>
+			  <navigator url="/pages/news/news?type=2" class="weui-grid" hover-class="weui-grid_active">
+			  
+			  <image class="weui-grid__icon" src="../../images/icon_nav_special.png" />
+			  <view class="weui-grid__label">象棋赛事</view>			  
+			  </navigator>
+			</block>
+			<block>
+			  <navigator url="/pages/news/news?type=3" class="weui-grid" hover-class="weui-grid_active">
+			  <image class="weui-grid__icon" src="../../images/icon_nav_special.png" />
+			  <view class="weui-grid__label">象棋典故</view>				  
+			  
+			  </navigator>
+			</block>			
+        </view>
+<!--		
+<view class="btn-area">
+  <navigator url="/pages/qipus/qipus" class="weui-grid" hover-class="weui-grid_active">最新棋谱</navigator>
+  <navigator url="/pages/opening/opening" class="weui-grid" hover-class="weui-grid_active">开局导航</navigator>
+  <navigator url="/pages/players/players" class="weui-grid" hover-class="weui-grid_active">棋手风采</navigator>
+</view>
+
+<view class="btn-area">
+  <navigator url="/pages/news/news?type=1" class="weui-grid" hover-class="weui-grid_active">象棋动态</navigator>
+  <navigator url="/pages/news/news?type=2" hover-class="navigator-hover">象棋赛事</navigator>
+  <navigator url="/pages/news/news?type=3" hover-class="navigator-hover">象棋典故</navigator>
+</view>-->
+</view>
+</view>

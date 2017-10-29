@@ -1,0 +1,32 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">布局导航</view>
+    </view>
+    <view class="page__bd">
+	    <block wx:for="{{terms}}" wx:for-index="idx" wx:for-item="term">
+        <view class="weui-panel">
+            <view class="weui-panel__hd">
+			  <navigator url="/pages/opening/openinglist?tid={{term.tid}}">
+			    {{term.name}}
+			  </navigator>
+			</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+					    <block wx:for="{{term.subs}}" wx:for-index="idx1" wx:for-item="sub">
+                        <navigator url="/pages/opening/openinglist?tid={{sub.tid}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__bd weui-cell_primary">
+                                <view>{{sub.name}}</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </view>
+		</block>
+		
+	
+    </view>
+</view>

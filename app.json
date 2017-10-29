@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+	"pages/search/search",
+    "pages/qipus/qipus",
+	"pages/qipus/qipuitem",
+    "pages/players/players",
+	"pages/players/playeritem",
+	"pages/opening/opening",
+	"pages/opening/openinglist",
+	"pages/news/news",
+	"pages/news/newsitem"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "亚艾元象棋",
+    "navigationBarTextStyle":"black"
+  }
+}

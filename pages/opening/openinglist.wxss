@@ -1,0 +1,8 @@
+/**players.wxss**/
+.weui-media-box__hd_in-appmsg {
+margin-right:.5em;
+width:180px;
+height:230px;
+line-height:230px;
+text-align:center;
+}

@@ -1,0 +1,22 @@
+/**qipus.wxss**/
+.weui-media-box__hd_in-appmsg {
+margin-right:.5em;
+width:180px;
+height:230px;
+line-height:230px;
+text-align:center;
+}
+
+.qipu-search-button{
+ margin-left:5px;
+
+}
+
+button[size="mini"]{
+  padding:0px 0.5em;
+}
+
+.weui-search-bar{
+  padding:20px 5px;
+}
+
